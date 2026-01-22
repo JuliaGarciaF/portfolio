@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-    <title>Julia García Fraile | Ingeniería Informática & ADE | Ganadora Hack4edu</title>
-
-    <meta name="description" content="Perfil profesional de Julia García Fraile. Estudiante de Doble Grado en Ingeniería Informática y ADET en UPSA. Ganadora internacional de Hack4edu 2024/25 y premiada por MAPFRE.">
-
-    <meta property="og:title" content="Julia García Fraile | Portfolio Profesional">
-    <meta property="og:description" content="Descubre mi trayectoria en tecnología y estrategia, mis proyectos premiados con IA y mi candidatura al CERN.">
-    <meta property="og:image" content="https://juliagarciaf.github.io/portfolio/img/Screenshot_20230922_123029_Photos.jpg">
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Julia García Fraile | Portfolio Profesional</title>
@@ -15,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Space+Mono&family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
-    <meta name="google-site-verification" content="46Kpcy6aj79c20IB42tFKq0jXqpUjV0pH4fkv6wixco" />
 
     <script>
       tailwind.config = {
@@ -42,6 +34,7 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .stack-card { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        /* Perforaciones de película color crema para el carrete granate */
         .film-holes {
             background-image: radial-gradient(circle, #FDFBF7 2px, transparent 2.5px);
             background-size: 10px 15px; background-repeat: repeat-y;
@@ -51,58 +44,57 @@
 
 <body class="bg-bg-cream text-text-dark font-body antialiased">
 
-    <nav class="fixed top-0 w-full z-50 px-10 py-6 flex justify-between items-center backdrop-blur-md bg-bg-cream/80 border-b border-brand/5">
+    <nav class="fixed top-0 w-full z-50 px-6 md:px-10 py-4 md:py-6 flex justify-between items-center backdrop-blur-md bg-bg-cream/80 border-b border-brand/5">
         <div class="font-display font-bold text-xl tracking-tighter text-brand">JGF<span class="text-gold">.</span></div>
-        <div class="hidden md:flex gap-10 font-mono text-[10px] tracking-[0.2em] uppercase opacity-60">
-            <a href="#home" class="hover:text-brand transition-colors tracking-widest">Inicio</a>
-            <a href="#about" class="hover:text-brand transition-colors tracking-widest">Perfil</a>
-            <a href="#projects" class="hover:text-brand transition-colors tracking-widest">Impacto</a>
-            <a href="#contact" class="hover:text-brand transition-colors tracking-widest">Contacto</a>
+        <div class="flex gap-4 md:gap-10 font-mono text-[9px] md:text-[10px] tracking-[0.1em] md:tracking-[0.2em] uppercase opacity-60">
+            <a href="#home" class="hover:text-brand transition-colors">Inicio</a>
+            <a href="#about" class="hover:text-brand transition-colors">Perfil</a>
+            <a href="#projects" class="hover:text-brand transition-colors">Impacto</a>
+            <a href="#contact" class="hover:text-brand transition-colors">Contacto</a>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="text-center z-10 space-y-6 relative ml-40 md:ml-80">
-            <span class="block font-mono text-[10px] tracking-[0.4em] uppercase text-brand/60">Estrategia & Tecnología</span>
-            <h1 class="font-display text-8xl md:text-9xl leading-none text-brand">
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden px-6">
+        <div class="text-center z-10 space-y-6 relative md:ml-64 lg:ml-80">
+            <span class="block font-mono text-[9px] md:text-[10px] tracking-[0.4em] uppercase text-brand/60">Estrategia & Tecnología</span>
+            <h1 class="font-display text-6xl sm:text-7xl md:text-9xl leading-none text-brand">
                 Julia <br/> <span class="italic font-light">García</span>
             </h1>
-            <div class="flex flex-wrap justify-center gap-6 pt-10">
-                <button onclick="alert('Para más información por favor contacte conmigo ')" class="px-10 py-4 border border-brand text-brand hover:bg-brand hover:text-white transition-all font-mono text-xs tracking-widest uppercase">Ver CV</button>
-                <button onclick="alert('Para más información por favor contacte conmigo')" class="px-10 py-4 bg-brand text-white hover:bg-text-dark transition-all font-mono text-xs tracking-widest uppercase">Carta Motivacion</button>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 pt-6 md:pt-10">
+                <button onclick="alert('Para más información por favor contacte conmigo')" class="px-8 md:px-10 py-3 md:py-4 border border-brand text-brand hover:bg-brand hover:text-white transition-all font-mono text-xs tracking-widest uppercase">Ver CV</button>
+                <button onclick="alert('Para más información por favor contacte conmigo')" class="px-8 md:px-10 py-3 md:py-4 bg-brand text-white hover:bg-text-dark transition-all font-mono text-xs tracking-widest uppercase">Candidatura CERN</button>
             </div>
         </div>
 
-        <div class="absolute left-[-20px] top-[-5%] h-[110%] w-56 md:w-72 bg-brand py-12 hidden sm:flex flex-col justify-around items-center border-r-4 border-brand/30 -rotate-6 z-0">
-            <div class="absolute left-3 top-0 bottom-0 w-4 film-holes opacity-50"></div>
-            <div class="absolute right-3 top-0 bottom-0 w-4 film-holes opacity-50"></div>
+        <div class="absolute left-[-20px] top-[-5%] h-[110%] w-32 md:w-56 lg:w-72 bg-brand py-12 flex flex-col justify-around items-center border-r-4 border-brand/30 -rotate-6 z-0 opacity-20 md:opacity-100">
+            <div class="absolute left-3 top-0 bottom-0 w-2 md:w-4 film-holes opacity-50"></div>
+            <div class="absolute right-3 top-0 bottom-0 w-2 md:w-4 film-holes opacity-50"></div>
             
-            <div class="w-40 h-56 md:w-56 md:h-72 border-[3px] border-white shadow-xl rotate-2 overflow-hidden bg-white">
+            <div class="w-20 h-28 md:w-40 md:h-56 border-[2px] md:border-[3px] border-white shadow-xl rotate-2 overflow-hidden bg-white">
                 <img src="./img/IMG-20250406-WA0232_Original.JPG" class="w-full h-full object-cover">
             </div>
-            <div class="w-40 h-56 md:w-56 md:h-72 border-[3px] border-white shadow-xl -rotate-1 overflow-hidden bg-white">
+            <div class="w-20 h-28 md:w-40 md:h-56 border-[2px] md:border-[3px] border-white shadow-xl -rotate-1 overflow-hidden bg-white">
                 <img src="./img/IMG_2676.JPG" class="w-full h-full object-cover">
             </div>
-            <div class="w-40 h-56 md:w-56 md:h-72 border-[3px] border-white shadow-xl rotate-3 overflow-hidden bg-white">
+            <div class="w-20 h-28 md:w-40 md:h-56 border-[2px] md:border-[3px] border-white shadow-xl rotate-3 overflow-hidden bg-white">
                 <img src="./img/Screenshot_20230922_123029_Photos.jpg" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-32 bg-white border-y border-brand/5">
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+    <section id="about" class="py-20 md:py-32 bg-white border-y border-brand/5">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
             
-            <div class="space-y-12">
+            <div class="space-y-8 md:space-y-12">
                 <div>
-                    <h2 class="font-display text-6xl md:text-7xl text-brand leading-none">
+                    <h2 class="font-display text-5xl md:text-7xl text-brand leading-none">
                         Hi, my name is <br/> <span class="font-bold">Julia García.</span>
                     </h2>
-                
                 </div>
 
                 <div class="space-y-6">
                     <span class="font-mono text-[10px] tracking-widest text-brand/40 uppercase">>> CONÓCEME >></span>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 relative">
                         <button onclick="toggleTab('tab-essence')" class="text-left group border-t border-brand/10 pt-4 focus:outline-none">
                             <span class="text-gold font-mono text-[9px] uppercase tracking-widest font-bold block mb-1">01 Essence</span>
                             <p class="text-xs text-brand/70 italic group-hover:text-brand transition-colors">Mi Esencia.</p>
@@ -117,93 +109,91 @@
                         </button>
                     </div>
 
-                    <div class="relative h-48">
-                        <div id="tab-essence" class="hidden absolute inset-0 bg-brand text-white p-6 shadow-2xl z-50 flex gap-6 items-center rounded-sm">
-                            <img src="./img/Hermanas.jpg" class="w-24 h-32 object-cover border-2 border-white/20 shrink-0">
-                            <p class="text-sm font-light leading-relaxed">Aunque la familia para mi es muy importante, me encantan mis hermanas, esos momentos en los que las tres disfrutamos de todo e intentamos hacer cosas juntas.</p>
+                    <div class="relative h-64 sm:h-48">
+                        <div id="tab-essence" class="hidden absolute inset-0 bg-brand text-white p-4 md:p-6 shadow-2xl z-50 flex flex-col sm:flex-row gap-4 md:gap-6 items-center rounded-sm overflow-y-auto sm:overflow-hidden">
+                            <img src="./img/Hermanas.jpg" class="w-16 h-20 md:w-24 md:h-32 object-cover border-2 border-white/20 shrink-0">
+                            <p class="text-[11px] md:text-sm font-light leading-relaxed">Aunque la familia para mi es muy importante, me encantan mis hermanas, esos momentos en los que las tres disfrutamos de todo e intentamos hacer cosas juntas.</p>
                         </div>
-                        <div id="tab-motors" class="hidden absolute inset-0 bg-brand text-white p-6 shadow-2xl z-50 flex gap-6 items-center rounded-sm">
-                            <img src="./img/Familia.jpg" class="w-24 h-32 object-cover border-2 border-white/20 shrink-0">
-                            <p class="text-sm font-light leading-relaxed">Mi familia y amigos son mi base. Son mi lugar seguro y con quiero estar todo el tiempo que pueda, me gusta bajar a verles y disfrutar con los mas pequeños o irme de viaje con los mas mayores</p>
+                        <div id="tab-motors" class="hidden absolute inset-0 bg-brand text-white p-4 md:p-6 shadow-2xl z-50 flex flex-col sm:flex-row gap-4 md:gap-6 items-center rounded-sm overflow-y-auto sm:overflow-hidden">
+                            <img src="./img/Familia.jpg" class="w-16 h-20 md:w-24 md:h-32 object-cover border-2 border-white/20 shrink-0">
+                            <p class="text-[11px] md:text-sm font-light leading-relaxed">Mi familia y amigos son mi base. Son mi lugar seguro y con quiero estar todo el tiempo que pueda, me gusta bajar a verles y disfrutar con los mas pequeños o irme de viaje con los mas mayores</p>
                         </div>
-                        <div id="tab-likes" class="hidden absolute inset-0 bg-brand text-white p-6 shadow-2xl z-50 flex gap-6 items-center rounded-sm">
-                            <img src="./img/Caballo.jpg" class="w-24 h-32 object-cover border-2 border-white/20 shrink-0">
-                            <p class="text-sm font-light leading-relaxed">En mi tiempo libre disfruto de muchas cosas, pero hay 3 que son mis favoritas. Me encanta dibujar cuando siento que lo necesito y expresar mis sentimientos, me encanta la musica y el baile, quedar con mis amigos una tarde cualquiera y hacer planes y lo que MAS disfruto es la hipica, me encata la conexion y la tranquilidad que me proporciona este deporte.</p>
+                        <div id="tab-likes" class="hidden absolute inset-0 bg-brand text-white p-4 md:p-6 shadow-2xl z-50 flex flex-col sm:flex-row gap-4 md:gap-6 items-center rounded-sm overflow-y-auto sm:overflow-hidden">
+                            <img src="./img/Caballo.jpg" class="w-16 h-20 md:w-24 md:h-32 object-cover border-2 border-white/20 shrink-0">
+                            <p class="text-[11px] md:text-sm font-light leading-relaxed">En mi tiempo libre disfruto de muchas cosas, pero hay 3 que son mis favoritas: el dibujo para expresar sentimientos, la música/baile, y la hípica, por la conexión y tranquilidad que me proporciona.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="relative">
-                <div class="bg-[#FDFBF7] rounded-sm shadow-2xl border border-brand/10 p-10 transform rotate-1 relative">
-                    <div class="h-32 mb-10 border-b border-brand/5 flex items-center justify-around opacity-60">
-                        <div class="w-20 h-20 border-2 border-brand/20 rounded-full flex items-center justify-center rotate-12 text-brand/40 font-mono text-[8px] text-center uppercase">CERN Admitted<br/>2026</div>
-                        <div class="border border-brand/15 p-2 rotate-[-8deg] text-brand/30 font-mono text-[7px] uppercase">New York City<br/>EF 2025</div>
-                        <div class="w-20 h-14 border-2 border-brand/20 rounded-[50%] flex items-center justify-center rotate-6 text-brand/30 font-mono text-[7px] text-center uppercase">London Arrival<br/>2018</div>
+            <div class="relative mt-10 lg:mt-0">
+                <div class="bg-[#FDFBF7] rounded-sm shadow-2xl border border-brand/10 p-6 md:p-10 transform rotate-1 relative max-w-full">
+                    <div class="h-24 md:h-32 mb-6 md:mb-10 border-b border-brand/5 flex items-center justify-around opacity-60">
+                        <div class="w-16 h-16 md:w-20 md:h-20 border-2 border-brand/20 rounded-full flex items-center justify-center rotate-12 text-brand/40 font-mono text-[7px] md:text-[8px] text-center uppercase">CERN Admitted<br/>2026</div>
+                        <div class="hidden sm:block border border-brand/15 p-2 rotate-[-8deg] text-brand/30 font-mono text-[7px] uppercase text-center">New York City<br/>Immersion<br/>EF 2025</div>
+                        <div class="w-16 h-12 md:w-20 md:h-14 border-2 border-brand/20 rounded-[50%] flex items-center justify-center rotate-6 text-brand/30 font-mono text-[7px] text-center uppercase">London Arrival<br/>2018</div>
                     </div>
 
-                    <div class="flex gap-8">
-                        <div class="w-40 h-52 border-4 border-white shadow-lg shrink-0 overflow-hidden">
+                    <div class="flex flex-col sm:flex-row gap-6 md:gap-8">
+                        <div class="w-full sm:w-40 h-52 border-4 border-white shadow-lg shrink-0 overflow-hidden">
                             <img src="./img/Screenshot_20230922_123029_Photos.jpg" class="w-full h-full object-cover">
                         </div>
                         <div class="flex-1 space-y-4 pt-2">
-                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Surname / Nom</span><h3 class="font-display text-2xl text-brand font-bold uppercase tracking-tight">García Fraile</h3></div>
-                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Given Names / Prénoms</span><h3 class="font-display text-xl text-brand tracking-tight">JULIA</h3></div>
+                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Surname / Nom</span><h3 class="font-display text-xl md:text-2xl text-brand font-bold uppercase tracking-tight">García Fraile</h3></div>
+                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Given Names / Prénoms</span><h3 class="font-display text-lg md:text-xl text-brand tracking-tight">JULIA</h3></div>
                             <div class="grid grid-cols-2 gap-4">
-                                <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Nationality</span><span class="font-bold text-xs uppercase">Spanish</span></div>
-                                <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Date of Birth</span><span class="font-bold text-xs uppercase">2004</span></div>
+                                <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Nationality</span><span class="font-bold text-[10px] md:text-xs uppercase">Spanish</span></div>
+                                <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Date of Birth</span><span class="font-bold text-[10px] md:text-xs uppercase">2004</span></div>
                             </div>
-                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Educational Background</span><p class="font-semibold text-[9px] text-brand/80 leading-tight uppercase tracking-tight">Double Degree: ADET + CS Engineering (UPSA)</p></div>
+                            <div><span class="block text-[8px] font-mono uppercase text-brand/40 tracking-widest">Background</span><p class="font-semibold text-[8px] md:text-[9px] text-brand/80 leading-tight uppercase tracking-tight">Double Degree: ADET + CS Engineering (UPSA)</p></div>
                         </div>
                     </div>
-                    <div class="mt-12 pt-4 border-t border-brand/5 font-mono text-[10px] tracking-[0.5em] text-brand/20 leading-none">
-                        P&lt;ESPGARCIA&lt;&lt;FRAILE&lt;&lt;JULIA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br/>
-                        A1234567&lt;4ESP0401018F2610135&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;10
+                    <div class="mt-8 md:mt-12 pt-4 border-t border-brand/5 font-mono text-[8px] md:text-[10px] tracking-[0.3em] md:tracking-[0.5em] text-brand/20 leading-none overflow-hidden whitespace-nowrap">
+                        P&lt;ESPGARCIA&lt;&lt;FRAILE&lt;&lt;JULIA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-32 bg-bg-cream">
+    <section id="projects" class="py-20 md:py-32 bg-bg-cream">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-display text-7xl text-brand text-center mb-24 italic">The Impact <span class="not-italic font-bold">Lab</span></h2>
+            <h2 class="font-display text-5xl md:text-7xl text-brand text-center mb-16 md:mb-24 italic">The Impact <span class="not-italic font-bold">Lab</span></h2>
 
-            <div class="space-y-[20vh]">
-                <div class="sticky top-40 bg-brand text-white p-12 shadow-2xl stack-card">
-                    <span class="text-gold font-display text-2xl mb-4 block italic">01 Winner</span>
-                    <h3 class="font-display text-5xl mb-6">TutorIA - Don Tyran</h3>
-                    <p class="text-lg font-light opacity-80">Ganadora internacional Hack4edu (2024 & 2025). Plataforma con IA centrada en la inclusión y el Diseño Universal para el Aprendizaje.</p>
+            <div class="space-y-[15vh] md:space-y-[20vh]">
+                <div class="sticky top-24 md:top-40 bg-brand text-white p-8 md:p-12 shadow-2xl stack-card">
+                    <span class="text-gold font-display text-xl md:text-2xl mb-2 md:mb-4 block italic">01 Winner</span>
+                    <h3 class="font-display text-3xl md:text-5xl mb-4 md:mb-6 tracking-tight">TutorIA - Don Tyran</h3>
+                    <p class="text-sm md:text-lg font-light opacity-80">Ganadora internacional Hack4edu (2024 & 2025). Plataforma con IA centrada en la inclusión y el Diseño Universal para el Aprendizaje.</p>
                 </div>
 
-                <div class="sticky top-44 bg-white p-12 shadow-2xl border border-brand/5 stack-card text-brand">
-                    <span class="text-gold font-display text-2xl mb-4 block italic">02 Recognition</span>
-                    <h3 class="font-display text-5xl mb-6">MAPFRE Risk Analytics</h3>
-                    <p class="text-lg font-light opacity-70">Premiada por el desarrollo de una solución técnica de gestión de riesgos y analítica aplicada a entornos corporativos reales.</p>
+                <div class="sticky top-28 md:top-44 bg-white p-8 md:p-12 shadow-2xl border border-brand/5 stack-card text-brand">
+                    <span class="text-gold font-display text-xl md:text-2xl mb-2 md:mb-4 block italic">02 Recognition</span>
+                    <h3 class="font-display text-3xl md:text-5xl mb-4 md:mb-6 tracking-tight">MAPFRE Risk Analytics</h3>
+                    <p class="text-sm md:text-lg font-light opacity-70">Premiada por el desarrollo de una solución técnica de gestión de riesgos y analítica corporativa real.</p>
                 </div>
 
-                <div class="sticky top-48 bg-[#F5F1E9] p-12 shadow-2xl border border-brand/5 stack-card text-brand">
-                    <span class="text-gold font-display text-2xl mb-4 block italic">03 Education</span>
-                    <h3 class="font-display text-4xl mb-8 uppercase tracking-tighter">Formación Complementaria</h3>
-                    <div class="grid gap-6 text-[11px] font-mono leading-relaxed uppercase opacity-80">
-                        <div><strong class="block text-brand mb-1">V Edición Hack4edu (Hackatón Internacional)</strong>Certificado de Aptitud en resolución de retos de educación digital con IA (ProFuturo, Telefónica y UPSA).</div>
-                        <div><strong class="block text-brand mb-1">Diseño y Creación de Idea de Negocio EBTs (Plan TCUE)</strong>Taller especializado en transferencia de conocimiento de la universidad a la empresa.</div>
-                        <div><strong class="block text-brand mb-1">VII Jornadas de Ciberseguridad</strong>Formación presencial sobre las últimas tendencias y retos en seguridad digital.</div>
-                        <div><strong class="block text-brand mb-1">Jornadas Tecnología, Empresa y Sociedad (VI y V)</strong>Ciclos de conferencias sobre competencias profesionales del futuro y canales corporativos.</div>
+                <div class="sticky top-32 md:top-48 bg-[#F5F1E9] p-8 md:p-12 shadow-2xl border border-brand/5 stack-card text-brand">
+                    <span class="text-gold font-display text-xl md:text-2xl mb-2 md:mb-4 block italic">03 Education</span>
+                    <h3 class="font-display text-2xl md:text-4xl mb-4 md:mb-8 uppercase tracking-tighter">Formación Complementaria</h3>
+                    <div class="grid gap-3 md:gap-6 text-[9px] md:text-[11px] font-mono leading-relaxed uppercase opacity-80">
+                        <div><strong class="block text-brand">V Edición Hack4edu (Hackatón)</strong>Certificado de Aptitud en IA (ProFuturo, Telefónica y UPSA).</div>
+                        <div><strong class="block text-brand">Idea de Negocio EBTs</strong>Taller especializado (Plan TCUE).</div>
+                        <div class="hidden sm:block"><strong class="block text-brand">Jornadas Ciberseguridad</strong>Tendencias y retos en seguridad digital.</div>
                     </div>
                 </div>
 
-                <div class="sticky top-52 bg-white p-12 shadow-2xl border border-brand/5 stack-card text-brand pb-20">
-                    <span class="text-gold font-display text-2xl mb-4 block italic">04 Global Skills</span>
-                    <h3 class="font-display text-4xl mb-8 uppercase tracking-tighter">Cursos & Idiomas</h3>
-                    <div class="space-y-10">
-                        <div class="border-b border-brand/10 pb-4">
-                            <span class="font-bold text-xs uppercase block text-brand">Oratoria (Septiembre 2024)</span>
-                            <p class="text-xl italic font-display mt-2">Curso profesional en "El Trampolín".</p>
+                <div class="sticky top-36 md:top-52 bg-white p-8 md:p-12 shadow-2xl border border-brand/5 stack-card text-brand pb-12 md:pb-20">
+                    <span class="text-gold font-display text-xl md:text-2xl mb-2 md:mb-4 block italic">04 Global Skills</span>
+                    <h3 class="font-display text-2xl md:text-4xl mb-4 md:mb-8 uppercase tracking-tighter">Cursos & Idiomas</h3>
+                    <div class="space-y-6">
+                        <div class="border-b border-brand/10 pb-2">
+                            <span class="font-bold text-[10px] uppercase block text-brand">Oratoria (Septiembre 2024)</span>
+                            <p class="text-lg italic font-display mt-1">Curso en "El Trampolín".</p>
                         </div>
                         <div>
-                            <span class="font-bold text-xs uppercase block text-brand">Inglés Global (Language Course)</span>
-                            <p class="text-xl italic font-display mt-2">Programas de inmersión lingüística en Londres y Nueva York con EF (2018-2025).</p>
+                            <span class="font-bold text-[10px] uppercase block text-brand">Inglés Global (Language Course)</span>
+                            <p class="text-lg italic font-display mt-1">Inmersión en Londres y NY (2018-2025).</p>
                         </div>
                     </div>
                 </div>
@@ -211,15 +201,15 @@
         </div>
     </section>
 
-    <section id="contact" class="py-40 bg-brand text-white text-center">
-        <h2 class="font-display text-6xl mb-12 italic">Let's work <span class="not-italic font-bold tracking-tighter">together.</span></h2>
-        <p class="font-mono text-sm tracking-[0.4em] mb-10">juliagarciafr04@gmail.com</p>
+    <section id="contact" class="py-24 md:py-40 bg-brand text-white text-center px-6">
+        <h2 class="font-display text-4xl md:text-6xl mb-8 md:mb-12 italic">Let's work <span class="not-italic font-bold tracking-tighter">together.</span></h2>
+        <p class="font-mono text-xs md:text-sm tracking-[0.2em] md:tracking-[0.4em] mb-10">juliagarciafr04@gmail.com</p>
         <div class="flex justify-center">
-            <a href="https://www.linkedin.com/in/julia-garcia-35852b2a2" target="_blank" class="text-gold hover:text-white transition-all font-mono text-sm uppercase tracking-widest border border-gold/30 px-10 py-3 rounded-full hover:border-white">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/julia-garcia-35852b2a2" target="_blank" class="text-gold hover:text-white transition-all font-mono text-[10px] md:text-sm uppercase tracking-widest border border-gold/30 px-8 md:px-10 py-3 rounded-full hover:border-white">LinkedIn</a>
         </div>
     </section>
 
-    <footer class="py-10 text-center font-mono text-[9px] tracking-[0.5em] uppercase opacity-30">
+    <footer class="py-6 md:py-10 text-center font-mono text-[8px] md:text-[9px] tracking-[0.3em] md:tracking-[0.5em] uppercase opacity-30 px-6">
         © 2026 Julia García Fraile — Made with code & strategy
     </footer>
 
